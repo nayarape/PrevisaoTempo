@@ -1,30 +1,19 @@
-# Weather Email Project
+# 🌦️ Weather Email Bot
 
-## 📜 Descrição
-Faz scraping da previsão do tempo para São Paulo (SP) usando dados do Climatempo e envia um email com a previsão.
+Projeto backend que realiza scraping da previsão do tempo da cidade de São Paulo no site [Climatempo](https://www.climatempo.com.br) e envia um e-mail com essas informações automaticamente para os destinatários configurados.
 
-## 🚀 Executando
+## 🚀 Funcionalidades
 
-### Instale as dependências:
-```
-npm install
-```
+- 🔎 Faz scraping da previsão de temperatura e condição climática.
+- 📧 Envia e-mail automaticamente com as informações coletadas.
+- 🌐 Endpoint HTTP para disparar o envio do e-mail manualmente.
 
-### Execute:
-```
-npm start
-```
+## 🛠️ Tecnologias usadas
 
-Acesse no navegador:
-```
-http://localhost:3000/send-weather
-```
+- [Node.js](https://nodejs.org/)
+- [Express](https://expressjs.com/)
+- [Axios](https://axios-http.com/)
+- [Cheerio](https://cheerio.js.org/) (para scraping)
+- [Nodemailer](https://nodemailer.com/) (para envio de e-mails)
+- [dotenv](https://github.com/motdotla/dotenv) (para variáveis de ambiente)
 
-## 🔑 Configuração (.env)
-```
-EMAIL_ADDRESS=seuemail@gmail.com
-EMAIL_PASSWORD=suasenhaouappkey
-EMAIL_TO=destinatario@email.com
-```
-
-⚠️ Para Gmail, utilize "Senhas de App".
